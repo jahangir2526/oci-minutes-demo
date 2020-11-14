@@ -1,0 +1,364 @@
+{
+  "title": "MY_BASIC_NET02",
+  "description": "",
+  "okit_version": "0.13.0",
+  "compartments": [
+    {
+      "id": "okit.compartment.0b390191-0e1a-4dc8-b433-e028dee06b82",
+      "freeform_tags": {},
+      "defined_tags": {},
+      "compartment_id": null,
+      "name": "MyCompartment",
+      "display_name": "MyCompartment"
+    }
+  ],
+  "customer_premise_equipments": [],
+  "autonomous_databases": [],
+  "block_storage_volumes": [],
+  "database_systems": [],
+  "dynamic_routing_gateways": [],
+  "fast_connects": [],
+  "file_storage_systems": [],
+  "instances": [],
+  "instance_pools": [],
+  "internet_gateways": [
+    {
+      "id": "okit.internetgateway.8dc79719-8b13-40a4-8fce-e62a17e1d49d",
+      "freeform_tags": {},
+      "defined_tags": {},
+      "display_name": "IGW1",
+      "compartment_id": "okit.compartment.0b390191-0e1a-4dc8-b433-e028dee06b82",
+      "vcn_id": "okit.virtualcloudnetwork.fd3062a2-f2fe-45ed-9cf8-f90ba631346f",
+      "enabled": true,
+      "name": "IGW1"
+    }
+  ],
+  "ipsec_connections": [],
+  "load_balancers": [],
+  "local_peering_gateways": [],
+  "mysql_database_systems": [],
+  "nat_gateways": [
+    {
+      "id": "okit.natgateway.ae0e62ef-c81d-49d4-814d-f67406df7194",
+      "freeform_tags": {},
+      "defined_tags": {},
+      "display_name": "NATGW1",
+      "compartment_id": "okit.compartment.0b390191-0e1a-4dc8-b433-e028dee06b82",
+      "vcn_id": "okit.virtualcloudnetwork.fd3062a2-f2fe-45ed-9cf8-f90ba631346f",
+      "block_traffic": false,
+      "name": "NATGW1"
+    }
+  ],
+  "network_security_groups": [],
+  "object_storage_buckets": [],
+  "oke_clusters": [],
+  "remote_peering_connections": [],
+  "route_tables": [
+    {
+      "id": "okit.routetable.c72bb520-f519-439a-bd44-99ae1b704822",
+      "freeform_tags": {},
+      "defined_tags": {},
+      "display_name": "RT_Public",
+      "compartment_id": "okit.compartment.0b390191-0e1a-4dc8-b433-e028dee06b82",
+      "vcn_id": "okit.virtualcloudnetwork.fd3062a2-f2fe-45ed-9cf8-f90ba631346f",
+      "route_rules": [
+        {
+          "description": "",
+          "destination": "0.0.0.0/0",
+          "destination_type": "CIDR_BLOCK",
+          "network_entity_id": "okit.internetgateway.8dc79719-8b13-40a4-8fce-e62a17e1d49d",
+          "target_type": "internet_gateways"
+        }
+      ],
+      "name": "RT_Public"
+    },
+    {
+      "id": "okit.routetable.ff5b7bea-7a52-4654-b195-b97e76d2cbe7",
+      "freeform_tags": {},
+      "defined_tags": {},
+      "display_name": "RT_Private",
+      "compartment_id": "okit.compartment.0b390191-0e1a-4dc8-b433-e028dee06b82",
+      "vcn_id": "okit.virtualcloudnetwork.fd3062a2-f2fe-45ed-9cf8-f90ba631346f",
+      "route_rules": [
+        {
+          "description": "",
+          "destination": "0.0.0.0/0",
+          "destination_type": "CIDR_BLOCK",
+          "network_entity_id": "okit.natgateway.ae0e62ef-c81d-49d4-814d-f67406df7194",
+          "target_type": "nat_gateways"
+        }
+      ],
+      "name": "RT_Private"
+    }
+  ],
+  "security_lists": [
+    {
+      "id": "okit.securitylist.a87c32ba-d8bd-4b11-a022-01c5815fa476",
+      "freeform_tags": {},
+      "defined_tags": {},
+      "display_name": "SL_Public",
+      "compartment_id": "okit.compartment.0b390191-0e1a-4dc8-b433-e028dee06b82",
+      "vcn_id": "okit.virtualcloudnetwork.fd3062a2-f2fe-45ed-9cf8-f90ba631346f",
+      "egress_security_rules": [
+        {
+          "description": "",
+          "destination": "0.0.0.0/0",
+          "destination_type": "CIDR_BLOCK",
+          "icmp_options": {
+            "code": "",
+            "type": ""
+          },
+          "is_stateless": false,
+          "protocol": "all",
+          "tcp_options": {
+            "destination_port_range": {
+              "max": "",
+              "min": ""
+            },
+            "source_port_range": {
+              "max": "",
+              "min": ""
+            }
+          },
+          "udp_options": {
+            "destination_port_range": {
+              "max": "",
+              "min": ""
+            },
+            "source_port_range": {
+              "max": "",
+              "min": ""
+            }
+          }
+        }
+      ],
+      "ingress_security_rules": [
+        {
+          "description": "",
+          "icmp_options": {
+            "code": "",
+            "type": ""
+          },
+          "is_stateless": false,
+          "protocol": "6",
+          "source": "0.0.0.0/0",
+          "source_type": "CIDR_BLOCK",
+          "tcp_options": {
+            "destination_port_range": {
+              "max": 22,
+              "min": 22
+            },
+            "source_port_range": {
+              "max": "",
+              "min": ""
+            }
+          },
+          "udp_options": {
+            "destination_port_range": {
+              "max": "",
+              "min": ""
+            },
+            "source_port_range": {
+              "max": "",
+              "min": ""
+            }
+          }
+        },
+        {
+          "protocol": "6",
+          "is_stateless": false,
+          "description": "",
+          "source_type": "CIDR_BLOCK",
+          "source": "0.0.0.0/0",
+          "tcp_options": {
+            "source_port_range": {
+              "min": "",
+              "max": ""
+            },
+            "destination_port_range": {
+              "min": "80",
+              "max": "80"
+            }
+          },
+          "udp_options": {
+            "source_port_range": {
+              "min": "",
+              "max": ""
+            },
+            "destination_port_range": {
+              "min": "",
+              "max": ""
+            }
+          },
+          "icmp_options": {
+            "code": "",
+            "type": ""
+          }
+        }
+      ],
+      "name": "SL_Public"
+    },
+    {
+      "id": "okit.securitylist.55e34617-96f1-4987-9af3-e53d1fa1b20b",
+      "freeform_tags": {},
+      "defined_tags": {},
+      "display_name": "SL_Private",
+      "compartment_id": "okit.compartment.0b390191-0e1a-4dc8-b433-e028dee06b82",
+      "vcn_id": "okit.virtualcloudnetwork.fd3062a2-f2fe-45ed-9cf8-f90ba631346f",
+      "egress_security_rules": [
+        {
+          "description": "",
+          "destination": "0.0.0.0/0",
+          "destination_type": "CIDR_BLOCK",
+          "icmp_options": {
+            "code": "",
+            "type": ""
+          },
+          "is_stateless": false,
+          "protocol": "all",
+          "tcp_options": {
+            "destination_port_range": {
+              "max": "",
+              "min": ""
+            },
+            "source_port_range": {
+              "max": "",
+              "min": ""
+            }
+          },
+          "udp_options": {
+            "destination_port_range": {
+              "max": "",
+              "min": ""
+            },
+            "source_port_range": {
+              "max": "",
+              "min": ""
+            }
+          }
+        }
+      ],
+      "ingress_security_rules": [
+        {
+          "protocol": "6",
+          "is_stateless": false,
+          "description": "",
+          "source_type": "CIDR_BLOCK",
+          "source": "10.0.0.0/16",
+          "tcp_options": {
+            "source_port_range": {
+              "min": "",
+              "max": ""
+            },
+            "destination_port_range": {
+              "min": "22",
+              "max": "22"
+            }
+          },
+          "udp_options": {
+            "source_port_range": {
+              "min": "",
+              "max": ""
+            },
+            "destination_port_range": {
+              "min": "",
+              "max": ""
+            }
+          },
+          "icmp_options": {
+            "code": "",
+            "type": ""
+          }
+        },
+        {
+          "protocol": "1",
+          "is_stateless": false,
+          "description": "",
+          "source_type": "CIDR_BLOCK",
+          "source": "10.0.0.0/16",
+          "tcp_options": {
+            "source_port_range": {
+              "min": "",
+              "max": ""
+            },
+            "destination_port_range": {
+              "min": "",
+              "max": ""
+            }
+          },
+          "udp_options": {
+            "source_port_range": {
+              "min": "",
+              "max": ""
+            },
+            "destination_port_range": {
+              "min": "",
+              "max": ""
+            }
+          },
+          "icmp_options": {
+            "code": "",
+            "type": ""
+          }
+        }
+      ],
+      "name": "SL_Private"
+    }
+  ],
+  "service_gateways": [],
+  "subnets": [
+    {
+      "id": "okit.subnet.1176241b-ea94-4d93-912f-42236d3fc67c",
+      "freeform_tags": {},
+      "defined_tags": {},
+      "display_name": "Subnet_Public",
+      "compartment_id": "okit.compartment.0b390191-0e1a-4dc8-b433-e028dee06b82",
+      "vcn_id": "okit.virtualcloudnetwork.fd3062a2-f2fe-45ed-9cf8-f90ba631346f",
+      "cidr_block": "10.0.1.0/24",
+      "dns_label": "sn001",
+      "prohibit_public_ip_on_vnic": false,
+      "route_table_id": "okit.routetable.c72bb520-f519-439a-bd44-99ae1b704822",
+      "security_list_ids": [
+        "okit.securitylist.a87c32ba-d8bd-4b11-a022-01c5815fa476"
+      ],
+      "availability_domain": "0",
+      "is_ipv6enabled": false,
+      "ipv6cidr_block": "",
+      "name": "Subnet_Public"
+    },
+    {
+      "id": "okit.subnet.3ecbdc1b-348a-43d1-a20e-0a96aefca25b",
+      "freeform_tags": {},
+      "defined_tags": {},
+      "display_name": "Subnet_Private",
+      "compartment_id": "okit.compartment.0b390191-0e1a-4dc8-b433-e028dee06b82",
+      "vcn_id": "okit.virtualcloudnetwork.fd3062a2-f2fe-45ed-9cf8-f90ba631346f",
+      "cidr_block": "10.0.2.0/24",
+      "dns_label": "sn002",
+      "prohibit_public_ip_on_vnic": true,
+      "route_table_id": "okit.routetable.ff5b7bea-7a52-4654-b195-b97e76d2cbe7",
+      "security_list_ids": [
+        "okit.securitylist.55e34617-96f1-4987-9af3-e53d1fa1b20b"
+      ],
+      "availability_domain": "0",
+      "is_ipv6enabled": false,
+      "ipv6cidr_block": "",
+      "name": "Subnet_Private"
+    }
+  ],
+  "virtual_cloud_networks": [
+    {
+      "id": "okit.virtualcloudnetwork.fd3062a2-f2fe-45ed-9cf8-f90ba631346f",
+      "freeform_tags": {},
+      "defined_tags": {},
+      "display_name": "MY-VCN",
+      "compartment_id": "okit.compartment.0b390191-0e1a-4dc8-b433-e028dee06b82",
+      "cidr_block": "10.0.0.0/16",
+      "dns_label": "vcn001",
+      "is_ipv6enabled": false,
+      "ipv6cidr_block": "",
+      "name": "MY-VCN"
+    }
+  ],
+  "template_type": "User"
+}

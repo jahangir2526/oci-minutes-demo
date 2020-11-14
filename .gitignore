@@ -1,0 +1,7 @@
+**/*.pptx
+**/*.drawio
+**/*config
+**/*.pem
+**/*.tfvars
+**/*.DS_Store
+./.DS_Store

@@ -1,31 +1,40 @@
-## <img src="NET-100B-VCN_title.png" alt="NET-100B-VCN_title " style="zoom:50%;" />
+# NET-100B-VCN : Create VCN resources using Terraform
 
 
 
-### Steps To Follow:
+## Overview
 
-  1. download **scripts/terraform_vcn_skeleton_okit.zip** where terraform client installed
+This demo will create a **VCN** with **2xSL, 2xRT, IGW, NATGW** **<u>using terraform</u>** and add necessary firewall & route rules.
 
-  2. unzip **terraform_vcn_skeleton_okit.zip** 
+## Architecture
 
-  3. open **terraform.tfvars** and provide values for all parameters.
+![NET-100B-VCN_arch_800x800](images/NET-100B-VCN_arch_800x800.png)
 
-  4. You can rename **MY-VCN** to any custom VCN name by opening **main.tf** file and update **display_name   = "MY-VCN100"**
+## Steps:
 
-  5. double check the **region/compartment_ocid**
+- Copy the directory **scripts/terraform_vcn_skeleton_okit** to a local directory (eg: ~/my-vcn-terraform)
 
-  6. terraform **init**
+  `cp scripts/terraform_vcn_skeleton_okit ~/my-vcn-terraform`
 
-  7. terraform **plan**|**apply**|**destroy**
+  `cd ~/my-vcn-terraform`
 
-     
+- open file **terraform.tfvars** and provide vaules for all parameters
 
-     ------
+- Run the terraform command
 
-     
+  `$ terraform init`
 
-<img src="NET-100B-VCN_arch.png" alt="NET-100B-VCN_arch" style="zoom:70%;" />
+  `$ terraform plan`
 
-------
+  `$ terraform apply`    ## if you want to provision the infrastructure
+
+  `$ terraform destory`   ## if you want to destroy the infrastructure
+
+
+
+## Youtube Video: 
+
+
+
 
 

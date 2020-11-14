@@ -1,10 +1,10 @@
-# NET-100A-VCN : Create VCN resources from Console 
+# NET-100A-VCN : Create VCN resources using OCI Console 
 
 
 
 ## Overview
 
-Create VCN resources from console (2xSL, 2xRT, IGW, NATGW), add firewall & route rules.
+This demo will create a VCN with 2xSL, 2xRT, IGW, NATGW **using console** and later add firewall & route rules.
 
 ## Architecture
 

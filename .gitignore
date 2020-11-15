@@ -2,7 +2,7 @@
 **/*.drawio
 **/*config
 **/*.pem
-**/*.tfvars
+**/*terraform.tfvars
 **/*.DS_Store
 ./.DS_Store
 **/*.ignore

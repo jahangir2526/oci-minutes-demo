@@ -4,7 +4,7 @@
 
 ## Overview
 
-This demo will create a VCN with 2xSL, 2xRT, IGW, NATGW **using console** and later add firewall & route rules.
+This demo will create a **VCN** with **2xSL, 2xRT, IGW, NATGW** <u>**using console**</u> and later add firewall & route rules.
 
 ## Architecture
 
@@ -27,6 +27,8 @@ This demo will create a VCN with 2xSL, 2xRT, IGW, NATGW **using console** and la
 
 
 ## Youtube Video: 
+
+[NET-001A-VCN](https://youtu.be/sKrMnNtRZKc)
 
 
 

@@ -14,7 +14,7 @@
 | Networking | VCN            | [**NET-100B-VCN**](NET-100B-VCN) | [Create VCN resources using Terraform](https://youtu.be/sKrMnNtRZKc) | Available |
 | Networking | VCN-IGW, NATGW | **NET-200A-VCN**                 | Launch WebServer in Public Subnet and DB in Private Subnet   | Working   |
 |            |                |                                  |                                                              |           |
-|            |                |                                  |                                                              |           |
+| Solution   | NA             | [**SOL-100A-WEB**](SOL-100A-WEB) | Using terraform - Quick WebServer in minute(s)               | Working   |
 
 
 

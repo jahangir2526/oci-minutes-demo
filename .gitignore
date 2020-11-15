@@ -4,6 +4,7 @@
 **/*.pem
 **/*terraform.tfvars
 **/*terraform.tfstate*
+**/.terrafor/
 **/*.DS_Store
 ./.DS_Store
 **/*.ignore*

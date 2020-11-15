@@ -3,6 +3,8 @@
 **/*config
 **/*.pem
 **/*terraform.tfvars
+**/*terraform.tfstate*
+#**/.terraform/
 **/*.DS_Store
 ./.DS_Store
 **/*.ignore*

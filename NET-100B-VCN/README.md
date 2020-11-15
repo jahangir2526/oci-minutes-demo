@@ -8,7 +8,7 @@ This demo will create a **VCN** with **2xSL, 2xRT, IGW, NATGW** **<u>using terra
 
 ## Architecture
 
-![NET-100B-VCN_arch_800x800](images/NET-100B-VCN_arch_800x800.png)
+![NET-100B-VCN_arch_800x800](img/NET-100B-VCN_arch_800x800.png)
 
 ## Steps:
 
@@ -32,9 +32,9 @@ This demo will create a **VCN** with **2xSL, 2xRT, IGW, NATGW** **<u>using terra
 
 
 
-## Youtube Video: 
+## Demo@Youtube: 
 
-
+[Create VCN resources using Terraform](https://youtu.be/sKrMnNtRZKc)
 
 
 

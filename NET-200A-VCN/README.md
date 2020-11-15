@@ -18,26 +18,18 @@
 
 ## Architecture
 
-<img src="images/NET-200A-VCN_arch_800x800.png" alt="NET-200A-VCN" style="zoom: 100%;" />
+<img src="img/NET-200A-VCN_arch_800x800.png" alt="NET-200A-VCN" style="zoom: 100%;" />
 
 ## Steps:
 
-1-11. Follow the demo
+**1-11.** Follow the demo **"NET-100A-VCN"** or **"NET-101A-VCN"**
 
-  2. Create **SL_Public**
-  3. Create **SL_Private**
-  4. Create **RT_Public**
-  5. Create **RT_Private**
-  6. Create **IGW1**
-  7. Create **NATGW1**
-  8. Create **Subnet_Public**
-  9. Create **Subnet_Private**
-  10. Add **Route rules**
-  11. Add **Security Rules**
+12. Launch a WebServer in Subnet_Public
+13. Launch a DB host in Subnet_Private
 
 
 
-## Youtube Video: 
+## Demo@Youtube: 
 
 
 

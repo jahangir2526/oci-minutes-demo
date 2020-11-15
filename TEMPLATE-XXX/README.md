@@ -8,7 +8,7 @@ This demo will create a **VCN** with **2xSL, 2xRT, IGW, NATGW** <u>**using conso
 
 ## Architecture
 
-<img src="img/NET-100A-VCN_arch_800x800.png" alt="NET-100A-VCN" style="zoom: 100%;" />
+<img src="images/NET-100A-VCN_arch_800x800.png" alt="NET-100A-VCN" style="zoom: 100%;" />
 
 ## Steps:
 
@@ -26,9 +26,9 @@ This demo will create a **VCN** with **2xSL, 2xRT, IGW, NATGW** <u>**using conso
 
 
 
-## Demo@Youtube: 
+## Youtube Video: 
 
-[Create VCN resources using OCI Console](https://youtu.be/TUvFwSRR1Hk)
+[NET-001A-VCN](https://youtu.be/sKrMnNtRZKc)
 
 
 

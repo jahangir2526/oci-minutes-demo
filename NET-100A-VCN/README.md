@@ -26,11 +26,5 @@ This demo will create a **VCN** with **2xSL, 2xRT, IGW, NATGW** <u>**using conso
 
 
 
-## Demo@Youtube: 
-
-[Create VCN resources using OCI Console](https://youtu.be/TUvFwSRR1Hk)
-
-
-
 
 

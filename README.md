@@ -1,14 +1,10 @@
-
-
-<img src="img/home.png" alt="home" style="zoom:50%;" />
-
-------
+[![Home Page](img/home.png)](https://www.youtube.com/channel/UCS5pANiji2QBLoUVNPsbDvQ/ "Click for Youtube Channel")
 
 
 
 ## TABLE OF CONTENTS
 
-| Area       | Sub Area       | Demo Code                            | Topic (Click to watch the Youtube Video)                     | Status    |
+| Area       | Sub Area       | Code (GitHub)                        | Topic (Click to watch the Youtube Video)                     | Status    |
 | ---------- | -------------- | ------------------------------------ | ------------------------------------------------------------ | --------- |
 | Essentials | NA             | [**ESSENTIAL-100A**](ESSENTIAL-100A) | [Generate API Signing Keys \| Add Public Key \|Retrieve OCIDs](https://youtu.be/byuz_xRhn9U) | Available |
 | Networking | VCN            | [**NET-100A-VCN**](NET-100A-VCN)     | [Create VCN resources using OCI Console](https://youtu.be/TUvFwSRR1Hk) | Available |

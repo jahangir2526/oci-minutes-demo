@@ -1,7 +1,5 @@
 # ESSENTIAL-100A : **Generate API Signing** Keys|Add Public Key| Retrieve OCIDs
 
-
-
 ## Overview
 
 The demo will cover three tasks

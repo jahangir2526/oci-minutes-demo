@@ -3,12 +3,12 @@
 ## Overview
 
 - Create VCN and related resources
-- Launch WebServer with cloud-init [cloudinit](../Common-Scripts/oci-cloud-init-httpd-webserver_v1.sh) in Public Subnet and DB host in Private Subnet
+- Launch WebServer with cloud-init [oci-cloud-init-httpd-webserver_v1.sh](../Common-Scripts/oci-cloud-init-httpd-webserver_v1.sh) in Public Subnet and DB host in Private Subnet
 - Test by accessing the web site, download patch/soft from DB host
 
 ## Prerequisite
 
-You must create the VCN and related resources following the [**"NET-100A-VCN"**](../NET-100A-VCN) or [**"NET-101A-VCN"**](../NET-101A-VCN) demo
+You must create the VCN and related resources following the [**"NET-100A-VCN"**](../NET-100A-VCN) or [**"NET-100B-VCN"**](../NET-100B-VCN) demo
 
 ## Architecture
 
@@ -22,16 +22,16 @@ You must create the VCN and related resources following the [**"NET-100A-VCN"**]
 
 #### A. Provision Infrastructure and Launch instances
 
-**1-11.** Follow the demo [**"NET-101A-VCN"**](../NET-101A-VCN) 
+**1-11.** Follow the demo [**"NET-100B-VCN"**](../NET-100B-VCN) 
 
 12. Launch a WebServer in Subnet_Public using console
 13. Launch a DB host in Subnet_Private using console
 
 #### B. Testing the web site access
 
-- [ ] Get the Public IP of WebServer 
-- [ ] Create an A record (**optional**) pointing to Public IP
-- [ ] Access website.
+- Get the Public IP of WebServer 
+- Create an A record (**optional**) pointing to Public IP
+- Access website.
 
 #### C. Test db one-way access to internet (via NATGW)
 

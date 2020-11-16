@@ -3,7 +3,7 @@
 ## Overview
 
 - Create VCN and related resources
-- Launch WebServer with cloud-init [cloudinit](../Common-Scripts/web_server_cloud-init) in Public Subnet and DB host in Private Subnet
+- Launch WebServer with cloud-init [cloudinit](../Common-Scripts/oci-cloud-init-httpd-webserver_v1.sh) in Public Subnet and DB host in Private Subnet
 - Test by accessing the web site, download patch/soft from DB host
 
 ## Prerequisite

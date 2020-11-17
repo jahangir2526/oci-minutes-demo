@@ -39,7 +39,7 @@ You must create the VCN and related resources following the [**"NET-100A-VCN"**]
 
 ```shell
 $ ssh -t -o ProxyCommand='ssh -i <PRIV_KEY> user@<PUBLIC_IP> -W %h:%p %r' -i <PRIV_KEY> user@<PRIV_IP>
-$ ping www.google.com
+$ ping oracle.com
 $ sudo yum install telnet -y
 ```
 

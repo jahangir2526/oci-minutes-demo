@@ -1,4 +1,4 @@
-# NET-200A-VCN : WebServer in Public-Subnet, DB in Priv-Subnet
+# WebServer in Public-Subnet, DB in Priv-Subnet | NET-200A-VCN
 
 ## Overview
 

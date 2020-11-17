@@ -39,7 +39,7 @@ You must create the VCN and related resources following the [**"NET-100A-VCN"**]
 
 ```shell
 $ ssh -t -o ProxyCommand='ssh -i <PRIV_KEY> user@<PUBLIC_IP> -W %h:%p %r' -i <PRIV_KEY> user@<PRIV_IP>
-$ ping oracle.com
+$ ping www.google.com
 $ sudo yum install telnet -y
 ```
 
@@ -66,7 +66,7 @@ $ sudo yum install -y mongodb-org
 
 ## Demo @ Youtube (Click on below image)
 
-[![NET-200A-VCN](img/thumbnail_320x320.png)](https://youtu.be/ZlWq7vqh2mE "Click to watch on YouTube")
+[![NET-200A-VCN](img/thumbnail_320x320.png)](https://my_youtube "Click to watch on YouTube")
 
 
 

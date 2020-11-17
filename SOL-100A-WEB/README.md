@@ -1,4 +1,4 @@
-# SOL-100A-WEB : Using terraform - Quick WebServer in minute(s)
+# Using terraform - Quick WebServer in minute(s) | SOL-100A-WEB
 
 
 
@@ -36,11 +36,7 @@ The **terraform** **code** provisions a **VCN** with **Subnet_Public** and launc
 
      `$ terraform destroy`
 
-## Youtube Video: 
-
-[SOL-100A-WEB](https:mylink)
 
 
-
-
-
+## Demo @ Youtube (Click on below image)
+[![SOL-100A-WEB](img/thumbnail_320x320.png)](https://youtu.be/pqAZdW2ChjI "Click to watch on YouTube")

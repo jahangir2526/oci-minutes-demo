@@ -1,4 +1,4 @@
-# NET-100B-VCN : Create VCN resources using Terraform
+# Create VCN resources using Terraform | NET-100B-VCN
 
 
 
@@ -30,11 +30,8 @@ This demo will create a **VCN** with **2xSL, 2xRT, IGW, NATGW** **<u>using terra
 
   `$ terraform destory`   ## if you want to destroy the infrastructure
 
-
-
-## Demo@Youtube: 
-
-[Create VCN resources using Terraform](https://youtu.be/sKrMnNtRZKc)
+## Demo @ Youtube (Click on below image)
+[![NET-100B-VCN](img/thumbnail_320x320.png)](https://youtu.be/TUvFwSRR1Hk "Click to watch on YouTube")
 
 
 

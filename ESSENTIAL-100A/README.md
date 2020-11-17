@@ -1,4 +1,4 @@
-# ESSENTIAL-100A : **Generate API Signing** Keys|Add Public Key| Retrieve OCIDs
+# **Generate API Signing** Keys|Add Public Key| Retrieve OCIDs | ESSENTIAL-100A
 
 ## Overview
 
@@ -37,9 +37,9 @@ The demo will cover three tasks
 
 [OCI Documentation for API Signing Keys](https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm)
 
-## Youtube Video: 
+## Demo @ Youtube (Click on below image)
 
-[ESSENTIAL-100A](https://mylink)
+[![ESSENTIAL-100A](img/thumbnail_320x320.png)](https://youtu.be/byuz_xRhn9U "Click to watch on YouTube")
 
 
 

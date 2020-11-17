@@ -1,4 +1,4 @@
-# NET-100A-VCN : Create VCN resources using OCI Console 
+# Create VCN resources using OCI Console | NET-100A-VCN
 
 
 
@@ -26,5 +26,5 @@ This demo will create a **VCN** with **2xSL, 2xRT, IGW, NATGW** <u>**using conso
 
 
 
-
-
+## Demo @ Youtube (Click on below image)
+[![NET-100A-VCN](img/thumbnail_320x320.png)](https://youtu.be/byuz_xRhn9U "Click to watch on YouTube")

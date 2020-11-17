@@ -39,7 +39,7 @@ The demo will cover three tasks
 
 ## Demo @ Youtube (Click on below image)
 
-[![ESSENTIAL-100A](img/thumbnail_320x320.png)](https://youtu.be/byuz_xRhn9U "Click to watch on YouTube")
+[![ESSENTIAL-100A](img/thumbnail_320x320.png)](https://youtu.be/59uyIrfd1IY "Click to watch on YouTube")
 
 
 

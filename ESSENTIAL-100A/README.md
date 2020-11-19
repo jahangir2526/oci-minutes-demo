@@ -1,4 +1,4 @@
-# **Generate API Signing** Keys|Add Public Key| Retrieve OCIDs | ESSENTIAL-100A
+# ESSENTIAL-100A | Generate API Signing Keys|Add Public Key| Retrieve OCIDs
 
 ## Overview
 

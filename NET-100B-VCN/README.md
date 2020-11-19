@@ -1,4 +1,4 @@
-# Create VCN resources using Terraform | NET-100B-VCN
+# NET-100B-VCN | Create VCN resources using Terraform
 
 
 

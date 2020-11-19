@@ -1,4 +1,4 @@
-# Create VCN resources using OCI Console | NET-100A-VCN
+# NET-100A-VCN | Create VCN resources using OCI Console
 
 
 

@@ -20,4 +20,4 @@
 
 #### Click on this image to open YouTube Channel
 
-[![Home Page](img/home.png)](https://www.youtube.com/channel/UCS5pANiji2QBLoUVNPsbDvQ/)
+[![Home Page](img/home.png)](https://www.youtube.com/channel/UCS5pANiji2QBLoUVNPsbDvQ/playlists)

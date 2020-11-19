@@ -1,4 +1,4 @@
-# OCI-CLI | git | terraform | kubectl - Setup & Installation (Linux) | ESSENTIAL-101A
+# ESSENTIAL-101A | OCI-CLI | git | terraform | kubectl - Setup & Installation (Linux)
 
 ## Overview
 
@@ -11,7 +11,7 @@
 
 ## Prerequisite:
 
-Follow tutorial [ESSENTIAL-100A](../ESSENTIAL-100A) to **generate API Signing Key**, **add public key** to user account and retrieve required **OCID** (user/tenancy/compartment). This will be needed while configuring OCI-CLI
+Follow tutorial [ESSENTIAL-100A](../ESSENTIAL-100A) to **generate API Signing Key**, **add public key** to user account and retrieve required **OCID** (user/tenancy/compartment). This will be required while configuring OCI-CLI
 
 ## Steps:
 
@@ -19,7 +19,8 @@ Follow tutorial [ESSENTIAL-100A](../ESSENTIAL-100A) to **generate API Signing Ke
 
 ```shell
 ## Install
-$ bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)" ## accept all the default values
+$ bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)" 
+## accept all the default values
 
 ## Configure
 $ oci setup config ## Say No when prompts- Do you want to generate a new API Signing RSA Key Pair (already generated keys following ESSENTIAL-100A demo tutorial as mentioned in Prerequisite)
@@ -69,6 +70,8 @@ $ kubectl version --client
 ## Useful Weblink
 
 **CLI-quickstart:** https://docs.cloud.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm
+
+**OCI-CLI Docs:** https://docs.cloud.oracle.com/en-us/iaas/tools/oci-cli/2.15.0/oci_cli_docs/
 
 **git-cli:** https://git-scm.com/downloads
 

@@ -92,7 +92,7 @@ http://127.0.0.1:<LOCAL_PORT>/okit/designer
 
 **OKIT-github:** https://github.com/oracle/oci-designer-toolkit
 
-<a href="http://www.google.com" target="_blank">http://www.oracle.com</a> </a>
+<a href="http://www.google.com" target="_blank">Go</a>
 
 
 

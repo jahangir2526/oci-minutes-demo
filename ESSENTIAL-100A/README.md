@@ -33,6 +33,10 @@ The demo will cover three tasks
 ### 5.Get the Key's Fingerprint (OPTIONAL)
 	openssl rsa -pubout -outform DER -in ~/.oci/oci_api_key_private.pem | openssl md5 -c
 
+## Add Public Key & Retrieve OCID:
+
+Please follow the youtube video below.
+
 ## Useful Weblink
 
 [OCI Documentation for API Signing Keys](https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm)

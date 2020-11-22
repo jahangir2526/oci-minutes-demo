@@ -11,7 +11,7 @@
 
 ## Prerequisite:
 
-Follow tutorial [ESSENTIAL-100A](../ESSENTIAL-100A) to **generate API Signing Key**, **add public key** to user account and retrieve required **OCID** (user/tenancy/compartment). This will be required while configuring OCI-CLI
+Follow tutorial [ESSENTIAL-100A](../ESSENTIAL-100A) to **generate API Signing Key**, **add public key** to user account and retrieve required **OCID** (user/tenancy/compartment). This will be required while configuring and running OCI-CLI
 
 ## Steps:
 
@@ -25,8 +25,12 @@ $ bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scr
 ## Configure
 $ oci setup config ## Say No when prompts- Do you want to generate a new API Signing RSA Key Pair (already generated keys following ESSENTIAL-100A demo tutorial as mentioned in Prerequisite)
 
-## Test
+## Test1
 $ oci os ns get ## expected to return the namespace of tenancy
+
+## Test2 (Create/Delete Bucket)
+$ oci os bucket create --name <BUCKET_NAME> -c <COMPARTMENT_OCID> ## create a bucket
+$ oci os bucket delete --name <BUCKET_NAME> --force ## delete bucket
 ```
 
 
@@ -49,7 +53,9 @@ $ git clone <git_url>
 ##### C. Install terraform client (Linux)
 
 ```shell
-$ wget https://releases.hashicorp.com/terraform/0.13.5/terraform_0.13.5_linux_amd64.zip ## check the latest version from download url
+$ wget https://releases.hashicorp.com/terraform/0.13.5/terraform_0.13.5_linux_amd64.zip 
+## check the latest version from download url
+
 $ unzip terraform_0.13.5_linux_amd64.zip
 $ sudo mv terraform /usr/local/bin
 $ terraform -help

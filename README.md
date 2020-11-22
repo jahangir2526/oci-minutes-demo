@@ -14,7 +14,7 @@
 |             |                |                                      |                                                              |               |
 | Marketplace |                | MKT-200A-NET                         | OpenVPN on OCI                                               | Working       |
 |             |                |                                      |                                                              |               |
-|             |                |                                      |                                                              |               |
+| Automation  | OKIT           | [OKIT-200A](OKIT-200A)               | OKIT - Setting UP in Minutes on OCI Compute                  | Working       |
 
 
 

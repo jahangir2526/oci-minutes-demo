@@ -1,13 +1,19 @@
 # OKIT-200A | OKIT - Setting UP in Minutes on OCI Compute
 
+
+
 ## Overview
 
 The demo will launch an Compute instance, run **OKIT** (Oracle Designer ToolKit) as docker container, access securely thorugh SSH tunnel.
+
+
 
 ## Prerequisite
 
 1. Generate **API Keys and retrieve OCIDs** (ignore if you have already). Ref. demo tutorial **[ESSENTIAL-100A](../ESSENTIAL-100A)**
 2. Create a VCN (dedicated for OKIT Only) as per **below architecture**. Ref. demo tutorial [**NET-100A-VCN**](../NET-100A-VCN)
+
+
 
 ## Architecture
 
@@ -27,7 +33,7 @@ Using OCI console, Launch a Compute VM in Subnet_Public
 
 ### 2. Login as opc, Install git, docker and build okit docker image
 
-```
+```sh
 ## Install docker-engine and git, start docker
 ## as opc
 $ sudo yum install git docker-engine -y
@@ -47,7 +53,7 @@ $ docker build -t okit .
 
 ### 3. Get API Private key and create config file
 
-```
+```shell
 $ mkdir -p /home/opc/okit/user/templates  ## location to store user template
 $ mkdir ~/.oci && cd ~/.oci
 ## copy api private key here
@@ -92,13 +98,11 @@ http://127.0.0.1:<LOCAL_PORT>/okit/designer
 
 **OKIT-github:** https://github.com/oracle/oci-designer-toolkit
 
-<a href="http://www.google.com" target="_blank">Go</a>
-
 
 
 ## Demo @ Youtube (Click on below image)
 
-[![ESSENTIAL-100A](img/thumbnail_320x320.png)](https://youtu.be/59uyIrfd1IY "Click to watch on YouTube")
+[![OKIT-200A](img/thumbnail_320x320.png)](https://youtu.be/59uyIrfd1IY "Click to watch on YouTube")
 
 
 

@@ -6,8 +6,8 @@ The demo will launch an Compute instance and run **OKIT** (Oracle Designer ToolK
 
 ## Prerequisite
 
-1. Create a VCN (dedicated for OKIT Only) as per **below architecture**. Ref. demo tutorial [NET-100A-VCN](NET-100A-VCN)
-2. Generate **API Keys and retrieve OCIDs** (ignore if you have already) ... Ref. demo tutorial [ESSENTIAL-100A](ESSENTIAL-100A)
+1. Create a VCN (dedicated for OKIT Only) as per **below architecture**. Ref. demo tutorial [NET-100A-VCN](../NET-100A-VCN)
+2. Generate **API Keys and retrieve OCIDs** (ignore if you have already) ... Ref. demo tutorial [ESSENTIAL-100A](../ESSENTIAL-100A)
 
 ## Architecture
 

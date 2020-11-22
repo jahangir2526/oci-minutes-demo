@@ -2,12 +2,12 @@
 
 ## Overview
 
-The demo will launch an Compute instance and run **OKIT** (Oracle Designer ToolKit) as docker container
+The demo will launch an Compute instance, run **OKIT** (Oracle Designer ToolKit) as docker container, access securely thorugh SSH tunnel.
 
 ## Prerequisite
 
-1. Create a VCN (dedicated for OKIT Only) as per **below architecture**. Ref. demo tutorial [NET-100A-VCN](../NET-100A-VCN)
-2. Generate **API Keys and retrieve OCIDs** (ignore if you have already) ... Ref. demo tutorial [ESSENTIAL-100A](../ESSENTIAL-100A)
+1. Generate **API Keys and retrieve OCIDs** (ignore if you have already). Ref. demo tutorial **[ESSENTIAL-100A](../ESSENTIAL-100A)**
+2. Create a VCN (dedicated for OKIT Only) as per **below architecture**. Ref. demo tutorial [**NET-100A-VCN**](../NET-100A-VCN)
 
 ## Architecture
 
@@ -27,12 +27,13 @@ Using OCI console, Launch a Compute VM in Subnet_Public
 
 ### 2. Login as opc, Install git, docker and build okit docker image
 
-```shell
+```
 ## Install docker-engine and git, start docker
 ## as opc
 $ sudo yum install git docker-engine -y
 $ sudo systemctl enable docker
 $ sudo systemctl start docker
+$ sudo systemctl status docker
 $ sudo groupadd docker
 $ sudo usermod -aG docker opc
 
@@ -44,9 +45,9 @@ $ cd oci-designer-toolkit/
 $ docker build -t okit .
 ```
 
-### 3. Get API Private key and create config
+### 3. Get API Private key and create config file
 
-```shell
+```
 $ mkdir -p /home/opc/okit/user/templates  ## location to store user template
 $ mkdir ~/.oci && cd ~/.oci
 ## copy api private key here
@@ -67,12 +68,6 @@ key_file=~/.oci/oci_api_key_2020.pem
 tenancy=ocid1.tenancy.oc1..aaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 region=ap-tokyo-1
 
-[mytenancy2]
-user=ocid1.user.oc1..aaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-fingerprint=41:d9:70:a1:21:db:b1:82:c4:6c:xx:xx:xx:xx:xx:xx
-key_file=~/.oci/oci_api_key_2020.pem
-tenancy=ocid1.tenancy.oc1..aaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-region=ap-tokyo-1
 ```
 
 ### 4. Run OKIT as docker container
@@ -81,14 +76,14 @@ region=ap-tokyo-1
 $ docker run -d --rm -p 80:80 --volume /home/opc/okit/user/templates:/okit/templates --volume /home/opc/.oci:/root/.oci --name okit okit
 ```
 
-### 5. SSH Tunnel to SECURE access to OKIT Web Server 
+### 5. SSH Tunnel to SECURE access to OKIT Web Server
 
 ```shell
-## At Local Machine execute the following and leave the terminal running
+## Create SSH tunnel. Execute the following & leave the terminal running
 $ ssh -N -L <LOCAL_PORT>:127.0.0.1:<REMOTE_PORT> -i <PRIVATE_KEY> opc@<REMOTE_IP>
 
-## example
-$ ssh -N -L 8081:127.0.0.1:80 -i Common2020 opc@168.138.14.117
+## Access from Local Browswer
+http://127.0.0.1:<LOCAL_PORT>/okit/designer
 ```
 
 
@@ -96,6 +91,8 @@ $ ssh -N -L 8081:127.0.0.1:80 -i Common2020 opc@168.138.14.117
 ## Useful Weblink
 
 **OKIT-github:** https://github.com/oracle/oci-designer-toolkit
+
+<a href="http://www.google.com" target="_blank">http://www.oracle.com</a> </a>
 
 
 

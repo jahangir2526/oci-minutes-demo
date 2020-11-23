@@ -17,7 +17,9 @@ The demo will launch an Compute instance, run **OKIT** (Oracle Designer ToolKit)
 
 ## Architecture
 
-<img src="img/OKIT-200A_arch_orig_800x800.png" width="500" alt="OKIT-200A" />
+
+
+![OKIT-200A_arch_orig_800x800](img/OKIT-200A_arch_orig_800x800.png)
 
 ## Steps
 

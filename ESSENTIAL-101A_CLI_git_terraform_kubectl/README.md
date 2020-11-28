@@ -11,7 +11,7 @@
 
 ## Prerequisite:
 
-Follow tutorial [ESSENTIAL-100A](../ESSENTIAL-100A*) to **generate API Signing Key**, **add public key** to user account and retrieve required **OCID** (user/tenancy/compartment). This will be required while configuring and running OCI-CLI
+Follow tutorial [ESSENTIAL-100A](../ESSENTIAL-100A_API-Keys_OCID) to **generate API Signing Key**, **add public key** to user account and retrieve required **OCID** (user/tenancy/compartment). This will be required while configuring and running OCI-CLI
 
 ## Steps:
 

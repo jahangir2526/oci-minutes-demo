@@ -11,7 +11,7 @@
 
 ## Prerequisite:
 
-Follow tutorial [ESSENTIAL-100A](../ESSENTIAL-100A_API-Keys_OCID) to **generate API Signing Key**, **add public key** to user account and retrieve required **OCID** (user/tenancy/compartment). This will be required while configuring and running OCI-CLI
+Follow tutorial [ESSENTIAL-100A_API-Keys_OCID](../ESSENTIAL-100A_API-Keys_OCID) to **generate API Signing Key**, **add public key** to user account and retrieve required **OCID** (user/tenancy/compartment). This will be required while configuring and running OCI-CLI
 
 ## Steps:
 
@@ -91,7 +91,7 @@ $ kubectl version --client
 
 ## Demo @ Youtube (Click on below image)
 
-[![ESSENTIAL-101A](img/thumbnail_320x320.png)](https://myyoutube "Click to watch on YouTube")
+[![ESSENTIAL-101A_thumbnail_320x320](img/ESSENTIAL-101A_thumbnail_320x320.png)](https://myyoutube "Click to watch on YouTube")
 
 
 

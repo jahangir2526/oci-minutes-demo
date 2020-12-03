@@ -55,15 +55,13 @@ $ openssl rsa -pubout -outform DER -in ~/.oci/oci_api_key_private.pem | openssl 
 -- Please follow the youtube video
 ```
 
-
-
 ## Useful Links
 
 [OCI Documentation for API Signing Keys](https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm)
 
 ## Demo @ Youtube
 
-[![ESSENTIAL-100A](img/thumbnail_320x320.png)](https://youtu.be/59uyIrfd1IY "Click to watch on YouTube")
+[![ESSENTIAL-100A_thumbnail_320x320](img/ESSENTIAL-100A_thumbnail_320x320.png)](https://youtu.be/T9jq2Wd3d0U "Click to watch on YouTube")
 
 
 

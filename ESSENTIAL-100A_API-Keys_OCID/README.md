@@ -16,30 +16,44 @@ The demo will cover three tasks
 - Get the Key's Fingerprint (**OPTIONAL**)
 
 #### i. Create Directory (OPTIONAL)
-	mkdir ~/.oci # if not created already
+```shell
+mkdir ~/.oci # if not created already
+```
 
 #### ii. Generate Private Key
-    ---To Generate a Key with no passphrase
-    $ openssl genrsa -out ~/.oci/oci_api_key_private.pem 2048
-    OR
-    ---To Generate a key with passpgrase
-    openssl genrsa -out ~/.oci/oci_api_key.pem_private -aes128 2048 
+```shell
+---To Generate a Key with no passphrase
+$ openssl genrsa -out ~/.oci/oci_api_key_private.pem 2048
+OR
+---To Generate a key with passpgrase
+$ openssl genrsa -out ~/.oci/oci_api_key.pem_private -aes128 2048 
+```
 #### iii. Change Permission    
-	chmod go-rwx ~/.oci/oci_api_key_private.pem
+```shell
+$ chmod go-rwx ~/.oci/oci_api_key_private.pem
+```
 
 #### iv. Generate Public Key
-	openssl rsa -pubout -in ~/.oci/oci_api_key_private.pem -out ~/.oci/oci_api_key_public.pem
+```shell
+$ openssl rsa -pubout -in ~/.oci/oci_api_key_private.pem -out ~/.oci/oci_api_key_public.pem
+```
 
 #### v.Get the Key's Fingerprint (OPTIONAL)
-	openssl rsa -pubout -outform DER -in ~/.oci/oci_api_key_private.pem | openssl md5 -c
+```shell
+$ openssl rsa -pubout -outform DER -in ~/.oci/oci_api_key_private.pem | openssl md5 -c
+```
 
 ## 2. Add Public Key to User
 
-> ***Please follow the youtube video .***
+```diff
+-- Please follow the youtube video
+```
 
 ## 3. Retrieve OCIDs (eg: Tenancy/User/Compartment)
 
-> ***Please follow the youtube video below.***
+```diff
+-- Please follow the youtube video
+```
 
 
 

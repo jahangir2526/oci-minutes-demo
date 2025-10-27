@@ -1,11 +1,12 @@
 #!/bin/bash
 echo "Installing nginx" >> /tmp/cloud-init.out
-echo "Starting/Enabling nginx" >> /tmp/cloud-init.out
 dnf install -y nginx
 
+echo "Starting/Enabling nginx" >> /tmp/cloud-init.out
 systemctl enable nginx
 systemctl start nginx
 
+echo "Adding firewall rules" >> /tmp/cloud-init.out
 firewall-cmd --permanent --add-service=http
 firewall-cmd --permanent --add-service=https
 firewall-cmd --reload
